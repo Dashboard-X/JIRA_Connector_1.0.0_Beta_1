@@ -1,0 +1,454 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JIRAConnector.UI</name>
+    </assembly>
+    <members>
+        <member name="T:JIRAConnector.UI.Commands.AddinDisconnectCommand">
+            <summary>
+            A command executed on Addin disconnection
+            </summary>
+        </member>
+        <member name="M:JIRAConnector.UI.Commands.AddinDisconnectCommand.#ctor(JIRAConnector.UI.UIController)">
+            <summary>
+            Default constuctor
+            </summary>
+            <param name="controller">A controller to interact with</param>
+        </member>
+        <member name="M:JIRAConnector.UI.Commands.AddinDisconnectCommand.Execute">
+            <summary>
+            Executes the command
+            </summary>
+        </member>
+        <member name="T:JIRAConnector.UI.Commands.AddinStartupCommand">
+            <summary>
+            Command executed on the addin startup
+            </summary>
+        </member>
+        <member name="M:JIRAConnector.UI.Commands.AddinStartupCommand.#ctor(JIRAConnector.UI.UIController)">
+            <summary>
+            Instantiate and initialize AddinStartupCommand
+            </summary>
+            <param name="controller">A controller to interact with</param>
+        </member>
+        <member name="M:JIRAConnector.UI.Commands.AddinStartupCommand.Execute">
+            <summary>
+            Executes the command
+            </summary>
+        </member>
+        <member name="F:JIRAConnector.UI.Dialogs.AboutDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:JIRAConnector.UI.Dialogs.AboutDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:JIRAConnector.UI.Dialogs.AboutDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:JIRAConnector.UI.Dialogs.IssueCommentDialog">
+            <summary>
+            Dialog Form to input the comment text for an issue.
+            </summary>
+        </member>
+        <member name="M:JIRAConnector.UI.Dialogs.IssueCommentDialog.#ctor">
+            <summary>
+            Default public constructor
+            </summary>
+        </member>
+        <member name="F:JIRAConnector.UI.Dialogs.IssueCommentDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:JIRAConnector.UI.Dialogs.IssueCommentDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:JIRAConnector.UI.Dialogs.IssueCommentDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:JIRAConnector.UI.Dialogs.IssueCommentDialog.Comment">
+            <summary>
+            Returns the comment text entered by the user
+            </summary>
+        </member>
+        <member name="T:JIRAConnector.UI.Dialogs.IssueDetailsDialog">
+            <summary>
+            Dialog Window used to display an issue's detailed properties
+            </summary>
+        </member>
+        <member name="M:JIRAConnector.UI.Dialogs.IssueDetailsDialog.#ctor(JIRAConnector.Common.Issue)">
+            <summary>
+            Creates a new instance of the Dialog Form and assigns values to all its controls
+            </summary>
+            <param name="issue">The <c>Issue</c> entity whose are going to be displayed</param>
+        </member>
+        <member name="F:JIRAConnector.UI.Dialogs.IssueDetailsDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:JIRAConnector.UI.Dialogs.IssueDetailsDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:JIRAConnector.UI.Dialogs.IssueDetailsDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:JIRAConnector.UI.Dialogs.LogWorkDoneDialog">
+            <summary>
+            A dialog form that gives the user the possibility to log work done to an issue
+            </summary>
+        </member>
+        <member name="M:JIRAConnector.UI.Dialogs.LogWorkDoneDialog.#ctor(JIRAConnector.Common.Issue)">
+            <summary>
+            Default constructor that initialize the UI components of the form.
+            </summary>
+        </member>
+        <member name="F:JIRAConnector.UI.Dialogs.LogWorkDoneDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:JIRAConnector.UI.Dialogs.LogWorkDoneDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:JIRAConnector.UI.Dialogs.LogWorkDoneDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:JIRAConnector.UI.Dialogs.LogWorkDoneDialog.WorkDone">
+            <summary>
+            A string representing the ammount of work done on an issue.
+            </summary>
+        </member>
+        <member name="M:JIRAConnector.UI.Dialogs.ResolveIssueDialog.#ctor(System.Collections.Generic.List{System.Collections.Generic.KeyValuePair{System.String,System.String}})">
+            <summary>
+            Creates a new instance of the class and initializes de "Resolutions" ComboBox with
+            all the available resolutions for the user to choose.
+            </summary>
+        </member>
+        <member name="F:JIRAConnector.UI.Dialogs.ResolveIssueDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:JIRAConnector.UI.Dialogs.ResolveIssueDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:JIRAConnector.UI.Dialogs.ResolveIssueDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:JIRAConnector.UI.Dialogs.SolutionLinkSettings.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:JIRAConnector.UI.Dialogs.SolutionLinkSettings.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:JIRAConnector.UI.Dialogs.SolutionLinkSettings.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:JIRAConnector.UI.Extensibility.Connect">
+            <summary>
+            Implementation of IDTExtensibility2 and IDTCommandTarget
+            </summary>
+        </member>
+        <member name="M:JIRAConnector.UI.Extensibility.Connect.OnConnection(System.Object,Extensibility.ext_ConnectMode,System.Object,System.Array@)">
+            <summary>Implements the OnConnection method of the IDTExtensibility2 interface. Receives notification that the Add-in is being loaded.</summary>
+            <param term='application'>Root object of the host application.</param>
+            <param term='connectMode'>Describes how the Add-in is being loaded.</param>
+            <param term='addInInst'>Object representing this Add-in.</param>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="M:JIRAConnector.UI.Extensibility.Connect.OnDisconnection(Extensibility.ext_DisconnectMode,System.Array@)">
+            <summary>Implements the OnDisconnection method of the IDTExtensibility2 interface. Receives notification that the Add-in is being unloaded.</summary>
+            <param term='disconnectMode'>Describes how the Add-in is being unloaded.</param>
+            <param term='custom'>Array of parameters that are host application specific.</param>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="M:JIRAConnector.UI.Extensibility.Connect.OnAddInsUpdate(System.Array@)">
+            <summary>Implements the OnAddInsUpdate method of the IDTExtensibility2 interface. Receives notification when the collection of Add-ins has changed.</summary>
+            <param term='custom'>Array of parameters that are host application specific.</param>
+            <seealso class='IDTExtensibility2' />		
+        </member>
+        <member name="M:JIRAConnector.UI.Extensibility.Connect.OnStartupComplete(System.Array@)">
+            <summary>Implements the OnStartupComplete method of the IDTExtensibility2 interface. Receives notification that the host application has completed loading.</summary>
+            <param term='custom'>Array of parameters that are host application specific.</param>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="M:JIRAConnector.UI.Extensibility.Connect.OnBeginShutdown(System.Array@)">
+            <summary>Implements the OnBeginShutdown method of the IDTExtensibility2 interface. Receives notification that the host application is being unloaded.</summary>
+            <param term='custom'>Array of parameters that are host application specific.</param>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="M:JIRAConnector.UI.Extensibility.Connect.QueryStatus(System.String,EnvDTE.vsCommandStatusTextWanted,EnvDTE.vsCommandStatus@,System.Object@)">
+            <summary>Implements the QueryStatus method of the IDTCommandTarget interface. This is called when the command's availability is updated</summary>
+            <param term='commandName'>The name of the command to determine state for.</param>
+            <param term='neededText'>Text that is needed for the command.</param>
+            <param term='status'>The state of the command in the user interface.</param>
+            <param term='commandText'>Text requested by the neededText parameter.</param>
+            <seealso class='Exec' />
+        </member>
+        <member name="M:JIRAConnector.UI.Extensibility.Connect.Exec(System.String,EnvDTE.vsCommandExecOption,System.Object@,System.Object@,System.Boolean@)">
+            <summary>Implements the Exec method of the IDTCommandTarget interface. This is called when the command is invoked.</summary>
+            <param term='commandName'>The name of the command to execute.</param>
+            <param term='executeOption'>Describes how the command should be run.</param>
+            <param term='varIn'>Parameters passed from the caller to the command handler.</param>
+            <param term='varOut'>Parameters passed from the command handler to the caller.</param>
+            <param term='handled'>Informs the caller if the command was handled or not.</param>
+            <seealso class='Exec' />
+        </member>
+        <member name="T:JIRAConnector.UI.Helpers.IconHelper">
+            <summary>
+            Provides functionality for the UI Components to obtain icons needed to display in
+            several controls / forms
+            </summary>
+        </member>
+        <member name="M:JIRAConnector.UI.Helpers.IconHelper.GetIssueTypeIcon(System.String)">
+            <summary>
+            Obtains an issue type icon based on its type description
+            </summary>
+        </member>
+        <member name="M:JIRAConnector.UI.Helpers.IconHelper.GetIssueStatusIcon(System.String)">
+            <summary>
+            Obtains an issue status icon based on its status description
+            </summary>
+        </member>
+        <member name="M:JIRAConnector.UI.Helpers.IconHelper.GetIssuePriorityIcon(System.String)">
+            <summary>
+            Obtains an issue priority icon based on its priority description
+            </summary>
+        </member>
+        <member name="T:JIRAConnector.UI.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:JIRAConnector.UI.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:JIRAConnector.UI.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:JIRAConnector.UI.UserControls.IssueCommentControl">
+            <summary>
+            UserControl that displays a comment made on a Issue
+            </summary>
+        </member>
+        <member name="M:JIRAConnector.UI.UserControls.IssueCommentControl.#ctor">
+            <summary>
+            Default constructor that initialize all the control's components
+            </summary>
+        </member>
+        <member name="M:JIRAConnector.UI.UserControls.IssueCommentControl.#ctor(JIRAConnector.Common.IssueComment)">
+            <summary>
+            Overloaded constructor that binds the components to the data to display
+            </summary>
+            <param name="comment">The <c>IssueComment</c> entity instance to display</param>
+        </member>
+        <member name="F:JIRAConnector.UI.UserControls.IssueCommentControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:JIRAConnector.UI.UserControls.IssueCommentControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:JIRAConnector.UI.UserControls.IssueCommentControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:JIRAConnector.UI.Context.ActivateWindowPane(System.String,System.String,System.String)">
+            <summary>
+            Show WindowPane for jiraconn
+            </summary>
+        </member>
+        <member name="M:JIRAConnector.UI.Context.CreateJIRAConnSubMenu">
+            <summary>
+            Creates an "JIRAConn" submenu on the Tools menu.
+            </summary>
+        </member>
+        <member name="P:JIRAConnector.UI.Context.DTE">
+            <summary>
+            The top level automation object.
+            </summary>
+        </member>
+        <member name="T:JIRAConnector.UI.IssueDetailDialog">
+            <summary>
+            Dialog Window used to display an issue's detailed properties
+            </summary>
+        </member>
+        <member name="M:JIRAConnector.UI.IssueDetailDialog.#ctor(JIRAConnector.Common.Issue)">
+            <summary>
+            Creates a new instance of the Dialog Form and assigns values to all its controls
+            </summary>
+            <param name="issue">The <c>Issue</c> entity whose are going to be displayed</param>
+        </member>
+        <member name="F:JIRAConnector.UI.IssueDetailDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:JIRAConnector.UI.IssueDetailDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:JIRAConnector.UI.IssueDetailDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:JIRAConnector.UI.JiraConnectorMainToolbar.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:JIRAConnector.UI.JiraConnectorMainToolbar.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:JIRAConnector.UI.JiraConnectorMainToolbar.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:JIRAConnector.UI.ResourceBitmaps">
+            <summary>
+            Contains constants for the resource ids of the various bitmaps.
+            </summary>
+        </member>
+        <member name="M:JIRAConnector.UI.UIController.DisplayErrorMessage(System.String,System.String)">
+            <summary>
+            Displays a MessageBox containing an error message 
+            </summary>
+            <param name="errorMessage">The error message displayed to the user</param>
+            <param name="errorTitle">The heading of the MessageBox dialog</param>
+        </member>
+        <member name="M:JIRAConnector.UI.UIController.DisplayInformationMessage(System.String,System.String)">
+            <summary>
+            Displays a MessageBox containing an informative message 
+            </summary>
+            <param name="informationMessage">The  message displayed to the user</param>
+            <param name="title">The heading of the MessageBox dialog</param>
+        </member>
+        <member name="M:JIRAConnector.UI.UIController.HandleFullIssueDetailRequest(JIRAConnector.Common.Issue)">
+            <summary>
+            Handles the request to show all the details for a selected issue in the main toolbar
+            </summary>
+            <param name="selectedIssue">The <c>Issue</c> whose details are going to be shown</param>
+        </member>
+        <member name="M:JIRAConnector.UI.UIController.DisplayFullIssueDetail(JIRAConnector.Common.Issue)">
+            <summary>
+            Displays a Dialog containing detailed information about an Issue
+            </summary>
+            <param name="issue">The <c>Issue</c> whose details are going to be shown</param>
+        </member>
+        <member name="M:JIRAConnector.UI.UIController.HandleAddCommentToIssueRequest(JIRAConnector.Common.Issue)">
+            <summary>
+            Handles the user request to add a comment to an Issue
+            </summary>
+            <param name="selectedIssue">The <c>Issue</c> entity to which the comment will be added</param>
+        </member>
+        <member name="M:JIRAConnector.UI.UIController.HandleResolveIssueRequest(JIRAConnector.Common.Issue)">
+            <summary>
+            Handles the user request to resolve an issue
+            </summary>
+            <param name="selectedIssue">The <c>Issue</c> entity to resolve</param>
+        </member>
+        <member name="M:JIRAConnector.UI.UIController.HandleCloseIssueRequest(JIRAConnector.Common.Issue)">
+            <summary>
+            Handles the user request to close an issue
+            </summary>
+            <param name="selectedIssue">The <c>Issue</c> entity to close</param>
+        </member>
+        <member name="M:JIRAConnector.UI.UIController.HandleLogWorkDoneRequest(JIRAConnector.Common.Issue)">
+            <summary>
+            Handles user request to log work done for an Issue
+            </summary>
+            <param name="selectedIssue">The issue that the user wants to log work on</param>
+        </member>
+        <member name="M:JIRAConnector.UI.UIController.GetOpenIssuesFromProject(System.String)">
+            <summary>
+            Gets all the unresolved issues assigned to the current user and store them into a local cache
+            </summary>
+            <param name="projectKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:JIRAConnector.UI.UIController.HandleStartIssueProgressRequest(JIRAConnector.Common.Issue)">
+            <summary>
+            Handles the user request to indicates that he/she has started to work on an issue
+            </summary>
+            <param name="selectedIssue">The <c>Issue</c> entity whose progress is being marked as started</param>
+        </member>
+        <member name="P:JIRAConnector.UI.UIController.Proxy">
+            <summary>
+            Returns a instance of the Proxy class to JIRA.
+            </summary>
+        </member>
+        <member name="M:JIRAConnector.UI.UserSettingsHelper.IsSolutionLinked(JIRAConnector.UI.UISolution)">
+            <summary>
+            Checks is the solution is linked to a JIRA project
+            </summary>
+            <param name="uisolution">The solution to check for</param>
+            <returns>True if the solution is linked, False otherwise</returns>
+        </member>
+        <member name="T:JIRAConnector.UI.VSCommandBars">
+            <summary>
+            A class that wraps operations on the VS command bar model
+            </summary>
+        </member>
+    </members>
+</doc>

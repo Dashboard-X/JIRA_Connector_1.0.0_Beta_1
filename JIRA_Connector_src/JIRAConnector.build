@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project name="JIRAConnector" default="release" xmlns="http://nant.sf.net/schemas/nant.xsd">
+	<!--Framework properties-->
+    <property name="nant.settings.currentframework" value = "net-2.0"/>
+    <property name="build.defines.csc" value="TRACE,STRONG"/>
+    <property name="current.build.debug" value="${build.debug}" dynamic="true"/>
+    <property name="current.build.defines.csc" value="${build.defines.csc},NET_2_0"/>
+
+	<!--Build properties-->
+    <property name="build.dir" value="build" />
+	<property name="src.dir" value="src" />
+	<property name="lib.dir" value="lib"/>
+	<property name="tools.dir" value="tools"/>
+	<property name="doc.dir" value="doc"/>
+	<property name="temp.dir" value="temp" />
+	<property name="build.bin.dir" value="${build.dir}\bin" />
+	<property name="build.doc.dir" value="${build.dir}\doc" />
+	<property name="build.src.dir" value="${build.dir}\src" />
+	<property name="build.lib.dir" value="${build.dir}\lib" />
+	<property name="build.api.dir" value="${build.dir}\api" />
+	<property name="build.installer.dir" value="${build.dir}\installer" />
+	<property name="build.results.dir" value="${build.dir}" />
+	<property name="current.assembly.version" value="1.0.0" />
+	<property name="assembly.informational.version" value="Beta 1" />
+	<property name="friendly.name" value="JIRA Connector ${current.assembly.version} ${assembly.informational.version}" />
+	
+	<!--depends="clean, build, package, documentation, installer" -->
+	<target name="release" 
+		depends="clean, build, package" 
+		description="Generates a Release of JIRA Connector.">
+	</target>
+	
+	<!-- INTERNAL TARGETS -->
+	<target name="build" 
+		depends="compile" 
+		description="Compiles the solution">
+	</target>
+	
+	<target name="clean">
+		<echo message="Deleting build directory..." />
+		<delete dir="${build.dir}" if="${directory::exists(property::get-value('build.dir'))}"/>
+		<delete dir="${temp.dir}" if="${directory::exists(property::get-value('temp.dir'))}"/>
+		<mkdir dir="${temp.dir}" />
+		<mkdir dir="${build.installer.dir}" />
+	</target>
+	
+	<target name="compile" description="Compiles the solution">
+		<echo message="Compiling the solution.." />
+		<copy todir="${build.bin.dir}">
+			<fileset basedir="${lib.dir}">
+				<include name="**\*" />
+			</fileset>
+		</copy>
+		
+		<copy todir="${build.bin.dir}">
+			<fileset basedir="${src.dir}\JIRAConnector.UI\Extensibility">
+				<include name="JIRAConnector.AddIn" />
+			</fileset>
+		</copy>
+		<copy todir="${build.bin.dir}">
+			<fileset>
+				<include name="register.bat" />
+			</fileset>
+		</copy>
+		<nant>
+			<buildfiles basedir="src">
+				<include name="**/*.build" />
+			</buildfiles>
+		</nant>
+	</target>
+	
+	<target name="package">
+		<echo message="Packaging JIRA Connector..." />
+		
+		<!--
+		<xmlpoke file="${src.dir}\JIRAConnector.UI\Extensibility\JIRAConnector.AddIn" xpath="/Extensibility/Addin/FriendlyName" 
+		value="${friendly.name}" />
+		-->
+		
+		<echo message="Copying source files..." />
+		<copy todir="${build.src.dir}">
+			<fileset basedir="${src.dir}">
+				<include name="**\*" />
+				<exclude name="**\bin\*" />
+				<exclude name="**\obj\*" />
+			</fileset>
+		</copy>
+		
+		<echo message="Copying external dependencies..." />
+		<copy todir="${build.lib.dir}">
+			<fileset basedir="${lib.dir}">
+				<include name="**\*" />
+			</fileset>
+		</copy>
+		
+		<zip zipfile="${build.dir}\${friendly.name}.zip">
+			<fileset basedir="${build.bin.dir}">
+				<include name="**/*" />
+			</fileset>
+		</zip>		
+	</target>
+		
+	<!--
+	<target name="installer" description="Generates JIRA Connector installer">
+		<exec program="${tools.dir}\Wix\candle.exe"
+			commandline="-nologo -w0 -djiraconnversion=${jiraconn.version} Wix\JIRAConnector.msi.wxs -out ${temp.dir}\JIRAConnector.wixobj" />
+		<exec program="${tools.dir}\Wix\light.exe">
+			<arg value="-b" />
+			<arg value="${build.bin.dir}" />
+			<arg value="-out" />
+			<arg value="${build.installer.dir}\JIRAConnector.msi" />
+			<arg value="${temp.dir}\JIRAConnector.wixobj" />
+			<arg value="${tools.dir}\Wix\wixui.wixlib" />
+			<arg value="-loc" />
+			<arg value="${tools.dir}\Wix\WixUI_en-us.wxl" />
+		</exec>
+	</target>
+	-->
+</project>

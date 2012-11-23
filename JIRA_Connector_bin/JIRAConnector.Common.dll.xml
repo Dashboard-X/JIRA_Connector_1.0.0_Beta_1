@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JIRAConnector.Common</name>
+    </assembly>
+    <members>
+        <member name="M:JIRAConnector.Common.Context.ActivateWindowPane(System.String,System.String,System.String)">
+            <summary>
+            Show WindowPane for jiraconn
+            </summary>
+        </member>
+        <member name="T:JIRAConnector.Common.LogManager">
+            <summary>
+            Manages the writing of debug and log messages to the output window of Visual Studio
+            </summary>
+        </member>
+        <member name="M:JIRAConnector.Common.LogManager.WriteMessage(System.String)">
+            <summary>
+            Writes a mesagge to the output window of Visual Studio
+            </summary>
+            <param name="text">The message to be written</param>
+        </member>
+        <member name="M:JIRAConnector.Common.LogManager.WriteDebugMessage(System.String)">
+            <summary>
+            Writes a debug message to the output window of Visual Studio,
+            ONLY if the option "debug-mode=true" is set in the configuration file
+            </summary>
+            <param name="text">The message to be written</param>
+        </member>
+    </members>
+</doc>

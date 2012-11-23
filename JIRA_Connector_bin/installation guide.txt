@@ -1,0 +1,5 @@
+ 1. Create a JIRA Connector folder in your Program Files.
+ 1. Unzip JIRA Connector release file into the JIRA Connector folder (i.e. "Program Files\JIRA Connector").
+ 2. Copy JIRAConnector.AddIn to "Documents and Settings\<user>\My Documents\Visual Studio 2005\Addins"
+ 3. Check that JIRAConnector.AddIn has the correct path to JIRAConnector.UI.dll. 
+		i.e.: <Assembly>C:\Program Files\JIRA Connector\JIRAConnector.UI.dll</Assembly> 

@@ -1,0 +1,45 @@
+*JIRACONN PROJECT ROADMAP
+
+Last Update: May, 2006
+
+*INTRODUCTION
+This document describes the high-level roadmap for JiraConn (http://sourceforge.net/projects/jiraconn)
+
+*BACKGROUND
+JiraConn is an OpenSource project started in early 2006, with the purpose of becoming a Microsoft Visual Studio 2005 managed add-in for 
+the issue tracking system JIRA. 
+It's main objective is to enable .NET developers to perform the most common JIRA tasks within the IDE. 
+Among other things, the add-in will provide issue creation, visualization, filtering, resolution and closing. 
+JiraConn is being developed in C# as an Open Source project under the GNU GPL Licence, and will be provided completely free of charge.
+
+*JIRACONN RELEASE STRATEGY
+We are targeting at December-2006 as the release date of our first stable and ready-to-use version. However, we intend to provide several preview
+version in the form of alphas and betas to gather community feedback and bug reports.
+ 
+*JIRACONN 1.0.0 (CodeName: Athelas)
+ 
+Timeframe: December 2006
+The JiraConn 1.0.0 release will include the following features: 
+
+- Visualization of open issues assigned to the user
+- Adding comments to an issue
+- Starting / Stopping issue progress
+- Logging worked hours.
+- Issue resolution and closing 
+- XML Configuration for the JIRA Server, Project and User information.
+- API Documentation with SandCastle
+- Automatic Versioning Scheme
+- Installation/Configuration Guide
+- Visual Studio 2005 Integration
+- Debug Messages in Output Window
+
+For more information about the codename, please refer to http://en.wikipedia.org/wiki/Athelas
+
+*JIRACONN 1.1.0
+TimeFrame: not yet defined
+
+- Issue creation
+- Installation Package made with Wix.
+- Issue filtering with Saved Filters
+- Configuration UI
+- Assigning an issue to a project member

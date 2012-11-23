@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2003/01/wi">
+	<Product Id="438e5725-897d-4738-9a98-ec5ecaf3a3fe" Name="JIRA Connector" Language="1033" Version="$(var.jiraconnversion)" Manufacturer="Ignacio Lopez, Jonathan Leibiusky">
+		<Package Id="????????-????-????-????-????????????" Description="Core" Comments="Core of JIRA Connector AddIn" InstallerVersion="200" Compressed="yes" />
+		<!--suppress the Modify button-->
+		<Property Id='ARPNOMODIFY'>1</Property>
+		<!--suppress the Repair functionality-->
+		<Property Id='ARPNOREPAIR'>1</Property>
+		<!--
+		Add or Remove Programs Entries
+		<Property Id='ARPCOMMENTS'>any comments</Property>
+		<Property Id='ARPCONTACT'>contact info</Property>
+		<Property Id='ARPHELPLINK'>URL for technical support</Property>
+		<Property Id='ARPURLINFOABOUT'>URL for general info about the product</Property>
+		<Property Id='ARPURLUPDATEINFO'>URL for product updates</Property>
+		<Property Id='ARPHELPTELEPHONE'>URL for technical support</Property>
+		<Property Id='ARPREADME'>path</Property>
+		<Property Id='ARPSIZE'>app size in kilobytes</Property>    
+		
+		To specify the icon used to the left of the application entry
+		<Property Id='ARPPRODUCTICON'>appicon.ico</Property>
+		...
+		<Icon Id="appicon.ico" SourceFile="Application.ico" />
+		-->
+		<Media Id="1" Cabinet="Product.cab" EmbedCab="yes" />
+	
+		<Directory Id="TARGETDIR" Name="SourceDir">
+		  <Directory Id="ProgramFilesFolder">
+			<Directory Id="INSTALLLOCATION" Name="JIRAConn" LongName="JIRA Connector">
+			<Component Id="AddinComponent" Guid="60e1f2f0-00b6-11db-92e3-0800200c9a66">
+				<File Id="JIRAConnector.UI.dll" Name="UI" LongName="JIRAConnector.UI.dll" Source="JIRAConnector.UI.dll" Vital="yes" DiskId="1" />
+				<File Id="JIRAConnector.Core.dll" Name="Core" LongName="JIRAConnector.Core.dll" Source="JIRAConnector.Core.dll" Vital="yes" DiskId="1" />
+				<File Id="JIRAConnector.Communication.dll" Name="Comm" LongName="JIRAConnector.Communication.dll" Source="JIRAConnector.Communication.dll" Vital="yes" DiskId="1" />
+				<File Id="JIRAConnector.Common.dll" Name="Common" LongName="JIRAConnector.Common.dll" Source="JIRAConnector.Common.dll" Vital="yes" DiskId="1" />
+				<File Id="JIRAConnector.AddIn" Name="AddIn" LongName="JIRAConnector.AddIn" Source="JIRAConnector.AddIn" Vital="yes" DiskId="1" />
+				<File Id="envdte80.dll" Name="envdte80" LongName="envdte80.dll" Source="envdte80.dll" Vital="yes" DiskId="1" />
+				<File Id="envdte.dll" Name="envdte" LongName="envdte.dll" Source="envdte.dll" Vital="yes" DiskId="1" />
+				<File Id="extensibility.dll" Name="extens" LongName="extensibility.dll" Source="extensibility.dll" Vital="yes" DiskId="1" />
+				<File Id="Microsoft.VisualStudio.CommandBars.dll" Name="CommBar" LongName="Microsoft.VisualStudio.CommandBars.dll" Source="Microsoft.VisualStudio.CommandBars.dll" Vital="yes" DiskId="1" />
+				<File Id="nunit.framework.dll" Name="nunit" LongName="nunit.framework.dll" Source="nunit.framework.dll" Vital="yes" DiskId="1" />
+				<File Id="stdole.dll" Name="stdole" LongName="stdole.dll" Source="stdole.dll" Vital="yes" DiskId="1" />
+			  </Component>
+			</Directory>
+		  </Directory>
+		</Directory>
+		<Feature Id="Complete" Title="Complete" Level="1" ConfigurableDirectory="INSTALLLOCATION"
+		 AllowAdvertise="no" InstallDefault="local" Absent="disallow">
+		  <ComponentRef Id="AddinComponent" />
+		</Feature>
+		<CustomAction Id='LaunchFile' BinaryKey='RegisterBAT' ExeCommand='' Return='asyncWait'/>
+		<Binary Id='RegisterBAT' SourceFile='Wix\register.bat' />
+		<UIRef Id="WixUI_FeatureTree" />
+		<UIRef Id="WixUI_ErrorProgressText" />
+	</Product>
+</Wix>

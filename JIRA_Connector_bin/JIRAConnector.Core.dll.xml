@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JIRAConnector.Core</name>
+    </assembly>
+    <members>
+        <member name="T:JIRAConnector.Core.IJiraProxy">
+            <summary>
+            Interface implemented by all the classes that wish to act as a proxy for a JIRA implementation.
+            </summary>
+        </member>
+        <member name="M:JIRAConnector.Core.IJiraProxy.GetAllIssuesFromProject(System.String)">
+            <summary>
+            Gets all the issues of the selected project assigned to the current user of JiraConnector
+            </summary>
+            <param name="projectName">The project name as stated in the Jira Configuration</param>
+            <returns>A Bindable list of <c>Issue</c> entities </returns>
+        </member>
+        <member name="M:JIRAConnector.Core.IJiraProxy.AddDetailedInfoToIssue(JIRAConnector.Common.Issue)">
+            <summary>
+            Adds to an issue some detailed and variable information (such as comments)
+            </summary>
+            <param name="issue">The <c>Issue</c> entity to add information to</param>
+        </member>
+        <member name="M:JIRAConnector.Core.IJiraProxy.AddCommentToIssue(JIRAConnector.Common.Issue,System.String)">
+            <summary>
+            Adds a comment to an Issue
+            </summary>
+            <param name="issue">The <c>Issue</c> entity to which the comment will be added</param>
+            <param name="comment">The text of the comment to be added</param>
+        </member>
+        <member name="M:JIRAConnector.Core.IJiraProxy.ResolveIssue(JIRAConnector.Common.Issue,System.Collections.Generic.KeyValuePair{System.String,System.String},System.String)">
+            <summary>
+            Marks an Issue as "Resolved"
+            </summary>
+            <param name="issue">The <c>Issue</c> entity to resolve</param>
+            <param name="resolution">The resolution to assing to the issue</param>
+            <param name="comment">An Optional Comment to add to the issue when resolving it</param>
+        </member>
+        <member name="M:JIRAConnector.Core.IJiraProxy.CloseIssue(JIRAConnector.Common.Issue,System.Collections.Generic.KeyValuePair{System.String,System.String},System.String)">
+            <summary>
+            Marks an Issue as "Closed"
+            </summary>
+            <param name="issue">The <c>Issue</c> entity to close</param>
+            <param name="resolution">The resolution to assing to the issue</param>
+            <param name="comment">An Optional Comment to add to the issue when closing it</param>
+        </member>
+        <member name="M:JIRAConnector.Core.IJiraProxy.GetAllProjectKeysForCurrenUser">
+            <summary>
+            Gets all the available project keys in a JIRA Server Instance to which the user has access
+            </summary>
+            <returns>An array of strings containing the project keys</returns>
+        </member>
+        <member name="M:JIRAConnector.Core.IJiraProxy.AuthenticateUser(System.String,System.String,System.String,System.String)">
+            <summary>
+            Authenticates a user in a JIRA Server instance, generating an authentication token
+            that is saved for future calls between JiraConnector and the server.
+            </summary>
+            <param name="url">The URL of the JIRA Server Instance</param>
+            <param name="port">The corresponding port</param>
+            <param name="username">The username to authenticate</param>
+            <param name="password">The password corresponding to the user</param>
+        </member>
+        <member name="M:JIRAConnector.Core.IJiraProxy.LogWorkDone(JIRAConnector.Common.Issue,System.String,System.String)">
+            <summary>
+            This method allows the user to log work done on an issue.
+            </summary>
+            <param name="issue">The selected issue to log work to</param>
+            <param name="workDone">A string representing the ammount of work done as entered by the user</param>
+        </member>
+        <member name="M:JIRAConnector.Core.IJiraProxy.GetOpenIssuesFromProject(System.String)">
+            <summary>
+            Gets all the "Open" and "In Progress" issues of the selected project assigned to the current user of JiraConnector
+            </summary>
+            <param name="projectKey">The project key as stated in the Jira Configuration</param>
+            <returns>A Bindable list of <c>Issue</c> entities </returns>
+        </member>
+        <member name="M:JIRAConnector.Core.IJiraProxy.GetAllResolutions">
+            <summary>
+            Gets all the available resolutions from the JIRA Server Instance
+            </summary>
+            <returns>A generic dictionary of strings representing the resolution names and keys</returns>
+        </member>
+        <member name="M:JIRAConnector.Core.IJiraProxy.StartIssueProgress(JIRAConnector.Common.Issue)">
+            <summary>
+            Changes the status of a given Issue to "In Progress"
+            </summary>
+            <param name="issue">The <c>Issue</c> entity to mark as in progress</param>
+        </member>
+        <member name="M:JIRAConnector.Core.IJiraProxy.StopIssueProgress(JIRAConnector.Common.Issue)">
+            <summary>
+            Stops the work progress of an Issue
+            </summary>
+            <param name="issue">The <c>Issue</c> whose progress is being stopped</param>
+        </member>
+        <member name="T:JIRAConnector.Core.JiraProxy">
+            <summary>
+            Business Logic Process Class that represents a proxy for a JIRA implementation. It's method are implemented as coarse-grained
+            services intended to be consumed by the UI.
+            </summary>
+        </member>
+        <member name="M:JIRAConnector.Core.JiraProxy.GetAllIssuesFromProject(System.String)">
+            <summary>
+            Gets all the issues of the selected project assigned to the current user of JiraConnector
+            </summary>
+            <param name="projectName">The project name as stated in the Jira Configuration</param>
+            <returns>A Bindable list of <c>Issue</c> entities </returns>
+        </member>
+        <member name="M:JIRAConnector.Core.JiraProxy.AddDetailedInfoToIssue(JIRAConnector.Common.Issue)">
+            <summary>
+            Adds to an issue some detailed and variable information (such as comments)
+            </summary>
+            <param name="issue">The <c>Issue</c> entity to add information to</param>
+        </member>
+        <member name="M:JIRAConnector.Core.JiraProxy.AddCommentToIssue(JIRAConnector.Common.Issue,System.String)">
+            <summary>
+            Adds a comment to an Issue
+            </summary>
+            <param name="issue">The <c>Issue</c> entity to which the comment will be added</param>
+            <param name="comment">The text of the comment to be added</param>
+        </member>
+        <member name="M:JIRAConnector.Core.JiraProxy.ResolveIssue(JIRAConnector.Common.Issue,System.Collections.Generic.KeyValuePair{System.String,System.String},System.String)">
+            <summary>
+            Marks an Issue as "Resolved"
+            </summary>
+            <param name="issue">The <c>Issue</c> entity to resolve</param>
+            <param name="resolution">The resolution to assing to the issue</param>
+            <param name="comment">An Optional Comment to add to the issue when resolving it</param>
+        </member>
+        <member name="M:JIRAConnector.Core.JiraProxy.CanPerformWorkflowAction(JIRAConnector.Common.Issue,JIRAConnector.Common.Enums.JiraWorkflowAction)">
+            <summary>
+            Indicates where a given workflow action is valid for a specific issue
+            </summary>
+            <param name="issue">The <c>Issue</c> entity to resolve</param>
+        </member>
+        <member name="M:JIRAConnector.Core.JiraProxy.GetAllProjectKeysForCurrenUser">
+            <summary>
+            Gets all the available project keys in a JIRA Server Instance to which the user has access
+            </summary>
+            <returns>An array of strings containing the project keys</returns>
+        </member>
+        <member name="M:JIRAConnector.Core.JiraProxy.AuthenticateUser(System.String,System.String,System.String,System.String)">
+            <summary>
+            Authenticates a user in a JIRA Server instance, generating an authentication token
+            that is saved for future calls between JiraConnector and the server.
+            </summary>
+            <param name="url">The URL of the JIRA Server Instance</param>
+            <param name="port">The corresponding port</param>
+            <param name="username">The username to authenticate</param>
+            <param name="password">The password corresponding to the user</param>
+        </member>
+        <member name="M:JIRAConnector.Core.JiraProxy.LogWorkDone(JIRAConnector.Common.Issue,System.String,System.String)">
+            <summary>
+            This method allows the user to log work done on an issue.
+            </summary>
+            <param name="issue">The selected issue to log work to</param>
+            <param name="workDone">A string representing the ammount of work done as entered by the user</param>
+        </member>
+        <member name="M:JIRAConnector.Core.JiraProxy.GetOpenIssuesFromProject(System.String)">
+            <summary>
+            Gets all the "Open" and "In Progress" issues of the selected project assigned to the current user of JiraConnector
+            </summary>
+            <param name="projectKey">The project key as stated in the Jira Configuration</param>
+            <returns>A Bindable list of <c>Issue</c> entities </returns>
+        </member>
+        <member name="M:JIRAConnector.Core.JiraProxy.GetAllResolutions">
+            <summary>
+            Gets all the available resolutions from the JIRA Server Instance
+            </summary>
+            <returns>A generic dictionary of strings representing the resolution names and keys</returns>
+        </member>
+        <member name="M:JIRAConnector.Core.JiraProxy.StartIssueProgress(JIRAConnector.Common.Issue)">
+            <summary>
+            Changes the status of a given Issue to "In Progress"
+            </summary>
+            <param name="issue">The <c>Issue</c> entity to mark as in progress</param>
+        </member>
+        <member name="M:JIRAConnector.Core.JiraProxy.StopIssueProgress(JIRAConnector.Common.Issue)">
+            <summary>
+            Stops the work progress of an Issue
+            </summary>
+            <param name="issue">The <c>Issue</c> whose progress is being stopped</param>
+        </member>
+    </members>
+</doc>

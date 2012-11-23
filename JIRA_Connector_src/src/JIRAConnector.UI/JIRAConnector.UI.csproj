@@ -1,0 +1,248 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9174EEF6-0FB4-4EDF-84B7-603F8C798943}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JIRAConnector.UI</RootNamespace>
+    <AssemblyName>JIRAConnector.UI</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Solo Common|AnyCPU' ">
+    <OutputPath>bin\Solo Common\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="envdte, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\envdte.dll</HintPath>
+    </Reference>
+    <Reference Include="envdte80, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\envdte80.dll</HintPath>
+    </Reference>
+    <Reference Include="extensibility, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\extensibility.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.CommandBars, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Microsoft.VisualStudio.CommandBars.dll</HintPath>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\stdole.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddinEventSink.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="CommandInvokerBase.cs" />
+    <Compile Include="Commands\AddinDisconnectCommand.cs" />
+    <Compile Include="Commands\AddinStartupCommand.cs" />
+    <Compile Include="Commands\CloseSolutionCommand.cs" />
+    <Compile Include="Commands\CommandBase.cs" />
+    <Compile Include="Commands\CommandHelper.cs" />
+    <Compile Include="Commands\OpenSolutionCommand.cs" />
+    <Compile Include="Dialogs\AboutDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AboutDialog.Designer.cs">
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Context.cs" />
+    <Compile Include="Dialogs\IssueCommentDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\IssueCommentDialog.Designer.cs">
+      <DependentUpon>IssueCommentDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\IssueDetailsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\IssueDetailsDialog.Designer.cs">
+      <DependentUpon>IssueDetailsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\LogWorkDoneDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\LogWorkDoneDialog.Designer.cs">
+      <DependentUpon>LogWorkDoneDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\ResolveIssueDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ResolveIssueDialog.Designer.cs">
+      <DependentUpon>ResolveIssueDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extensibility\Connect.cs" />
+    <Compile Include="Helpers\IconHelper.cs" />
+    <Compile Include="ICommandInvoker.cs" />
+    <Compile Include="IEventSink.cs" />
+    <Compile Include="JiraConnectorMainToolbar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JiraConnectorMainToolbar.Designer.cs">
+      <DependentUpon>JiraConnectorMainToolbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutputWindowWriter.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceBitmaps.cs" />
+    <Compile Include="SolutionEventSink.cs" />
+    <Compile Include="Dialogs\SolutionLinkSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SolutionLinkSettings.Designer.cs">
+      <DependentUpon>SolutionLinkSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SolutionLoadType.cs" />
+    <Compile Include="UISolution.cs" />
+    <Compile Include="UIController.cs" />
+    <Compile Include="UISolutionSettings.cs" />
+    <Compile Include="UserControls\IssueCommentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\IssueCommentControl.Designer.cs">
+      <DependentUpon>IssueCommentControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserSettings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserSettings.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UserSettingsHelper.cs" />
+    <Compile Include="VSCommandBars.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dialogs\AboutDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\IssueCommentDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IssueCommentDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\IssueDetailsDialog.resx">
+      <DependentUpon>IssueDetailsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\LogWorkDoneDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LogWorkDoneDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ResolveIssueDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ResolveIssueDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JiraConnectorMainToolbar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>JiraConnectorMainToolbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SolutionLinkSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SolutionLinkSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\IssueCommentControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IssueCommentControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JIRAConnector.Common\JIRAConnector.Common.csproj">
+      <Project>{AC6D703E-ADCF-4771-9826-2A9A83AEE865}</Project>
+      <Name>JIRAConnector.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JIRAConnector.Core\JIRAConnector.Core.csproj">
+      <Project>{C7393FE9-38C1-4A90-967B-930B4143EB2D}</Project>
+      <Name>JIRAConnector.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Extensibility\JIRAConnector.AddIn" />
+    <None Include="Resources\JiraConnector.Img.Stop_Icon.gif" />
+    <None Include="Resources\JiraConnector.Img.Start_Icon.gif" />
+    <None Include="Resources\JiraConnector.Img.RefreshIssues.gif" />
+    <None Include="Resources\refresh_icon2.jpg" />
+    <None Include="Resources\JiraConnector.Img.refresh.gif" />
+    <None Include="Resources\JiraConnector.Img.StatusInProgress.gif" />
+    <None Include="Resources\JiraConnector.Img.Calendar.png" />
+    <None Include="Resources\JiraConnector.Img.logo.png" />
+    <None Include="Resources\JiraConnector.Img.priority_minor.gif" />
+    <None Include="Resources\JiraConnector.Img.priority_major.gif" />
+    <None Include="Resources\JiraConnector.Img.priority_critical.gif" />
+    <None Include="Resources\JiraConnector.Img.priority_blocker.gif" />
+    <None Include="Resources\JiraConnector.Img.priority_trivial.gif" />
+    <None Include="Resources\JiraConnector.Img.status_resolved.gif" />
+    <None Include="Resources\JiraConnector.Img.status_reopened.gif" />
+    <None Include="Resources\JiraConnector.Img.status_open.gif" />
+    <None Include="Resources\JiraConnector.Img.status_closed.gif" />
+    <None Include="Resources\JiraConnector.Img.status_unassigned.gif" />
+    <None Include="Resources\JiraConnector.Img.newfeature.gif" />
+    <None Include="Resources\JiraConnector.Img.improvement.gif" />
+    <None Include="Resources\JiraConnector.Img.task.gif" />
+    <None Include="Resources\JiraConnector.Img.bug.gif" />
+    <None Include="Resources\JiraConnector.Img.StatusResolved.gif" />
+    <None Include="JIRAConnector.UI.Build" />
+    <None Include="Resources\JiraConnector.Img.Pencil2.png" />
+    <None Include="Resources\JiraConnector.Img.Pencil1.png" />
+    <None Include="Resources\JiraConnector.Img.Info2.png" />
+    <None Include="Resources\JiraConnector.Img.Info1.png" />
+    <None Include="Resources\jira_connector_logo.ico.jpg" />
+    <None Include="UserSettings.xsc">
+      <DependentUpon>UserSettings.xsd</DependentUpon>
+    </None>
+    <None Include="UserSettings.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UserSettings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UserSettings.xss">
+      <DependentUpon>UserSettings.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>mkdir "$(AppData)\Microsoft\VisualStudio\8.0\AddIns"
+copy "$(ProjectDir)Extensibility\JIRAConnector.AddIn" "$(AppData)\Microsoft\VisualStudio\8.0\AddIns"
+$(SolutionDir)..\tools\xmlmodifier "$(AppData)\Microsoft\VisualStudio\8.0\AddIns\JIRAConnector.AddIn" "Assembly" "$(TargetPath)"</PreBuildEvent>
+  </PropertyGroup>
+</Project>

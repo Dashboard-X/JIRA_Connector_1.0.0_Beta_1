@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<project name="JIRAConnector.UI" default="build" xmlns="http://nant.sf.net/schemas/nant.xsd">
+  <target name="build">
+	
+	<!-- Assembly Info Generation -->
+	<property name="assembly.name" value="JIRAConnector.UI.dll" />
+	<property name="assembly.description" value="" />
+	
+	<asminfo output="AssemblyInfo.cs" language="CSharp">
+		<imports>
+			<import name="System" />
+			<import name="System.Reflection"/>
+		</imports>
+		<attributes>
+			<attribute type="AssemblyVersionAttribute" value="${current.assembly.version}" />
+			<attribute type="AssemblyTitleAttribute" value="${assembly.name}" />
+			<attribute type="AssemblyDescriptionAttribute" value="${assembly.description}" />
+			<attribute type="AssemblyInformationalVersionAttribute" value="${assembly.informational.version}" />
+		</attributes>
+	</asminfo>
+	
+	<!-- Project Compilation -->
+	<resgen todir="." usesourcepath="true">
+		<resources>
+			<include name="**\*.resx" />
+		</resources>
+	</resgen>
+    <csc target="library" define="${current.build.defines.csc}" output="..\..\${build.bin.dir}\${assembly.name}" 
+	debug="false" doc="..\..\${build.bin.dir}\${assembly.name}.xml">
+      <references basedir="..\..\${build.bin.dir}">
+		<include name="EnvDTE.dll" />
+		<include name="EnvDTE80.dll" />
+		<include name="extensibility.dll" />
+		<include name="JIRAConnector.Common.dll" />
+		<include name="JIRAConnector.Core.dll" />
+		<include name="Microsoft.VisualStudio.CommandBars.dll" />
+		<include name="stdole.dll" />
+      </references>
+	  <resources>
+		<include name="**\*.resources" />
+      </resources>	  
+      <sources>
+        <include name="**\*.cs" />
+      </sources>
+    </csc>
+  </target>
+</project>
+
+

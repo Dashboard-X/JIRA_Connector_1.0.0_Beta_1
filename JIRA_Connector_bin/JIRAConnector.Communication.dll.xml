@@ -1,0 +1,1561 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JIRAConnector.Communication</name>
+    </assembly>
+    <members>
+        <member name="T:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.#ctor">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getServerInfo(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getServerInfoAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getServerInfoAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getGroup(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getGroupAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getGroupAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.createGroup(System.String,System.String,JIRAConnector.Communication.JiraWebService.RemoteUser)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.createGroupAsync(System.String,System.String,JIRAConnector.Communication.JiraWebService.RemoteUser)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.createGroupAsync(System.String,System.String,JIRAConnector.Communication.JiraWebService.RemoteUser,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.createUser(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.createUserAsync(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.createUserAsync(System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getUser(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getUserAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getUserAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.login(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.loginAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.loginAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getIssue(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getIssueAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getIssueAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.createIssue(System.String,JIRAConnector.Communication.JiraWebService.RemoteIssue)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.createIssueAsync(System.String,JIRAConnector.Communication.JiraWebService.RemoteIssue)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.createIssueAsync(System.String,JIRAConnector.Communication.JiraWebService.RemoteIssue,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getAvailableActions(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getAvailableActionsAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getAvailableActionsAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getComponents(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getComponentsAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getComponentsAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getProjects(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getProjectsAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getProjectsAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.updateIssue(System.String,System.String,JIRAConnector.Communication.JiraWebService.RemoteFieldValue[])">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.updateIssueAsync(System.String,System.String,JIRAConnector.Communication.JiraWebService.RemoteFieldValue[])">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.updateIssueAsync(System.String,System.String,JIRAConnector.Communication.JiraWebService.RemoteFieldValue[],System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.updateProject(System.String,JIRAConnector.Communication.JiraWebService.RemoteProject)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.updateProjectAsync(System.String,JIRAConnector.Communication.JiraWebService.RemoteProject)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.updateProjectAsync(System.String,JIRAConnector.Communication.JiraWebService.RemoteProject,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getIssueTypes(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getIssueTypesAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getIssueTypesAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getPriorities(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getPrioritiesAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getPrioritiesAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getResolutions(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getResolutionsAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getResolutionsAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getStatuses(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getStatusesAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getStatusesAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getSubTaskIssueTypes(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getSubTaskIssueTypesAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getSubTaskIssueTypesAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getCustomFields(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getCustomFieldsAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getCustomFieldsAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getSavedFilters(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getSavedFiltersAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getSavedFiltersAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getComments(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getCommentsAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getCommentsAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.addComment(System.String,System.String,JIRAConnector.Communication.JiraWebService.RemoteComment)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.addCommentAsync(System.String,System.String,JIRAConnector.Communication.JiraWebService.RemoteComment)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.addCommentAsync(System.String,System.String,JIRAConnector.Communication.JiraWebService.RemoteComment,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getVersions(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getVersionsAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getVersionsAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.createProject(System.String,System.String,System.String,System.String,System.String,System.String,JIRAConnector.Communication.JiraWebService.RemotePermissionScheme,JIRAConnector.Communication.JiraWebService.RemoteScheme,JIRAConnector.Communication.JiraWebService.RemoteScheme)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.createProjectAsync(System.String,System.String,System.String,System.String,System.String,System.String,JIRAConnector.Communication.JiraWebService.RemotePermissionScheme,JIRAConnector.Communication.JiraWebService.RemoteScheme,JIRAConnector.Communication.JiraWebService.RemoteScheme)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.createProjectAsync(System.String,System.String,System.String,System.String,System.String,System.String,JIRAConnector.Communication.JiraWebService.RemotePermissionScheme,JIRAConnector.Communication.JiraWebService.RemoteScheme,JIRAConnector.Communication.JiraWebService.RemoteScheme,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getFieldsForEdit(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getFieldsForEditAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getFieldsForEditAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.addUserToGroup(System.String,JIRAConnector.Communication.JiraWebService.RemoteGroup,JIRAConnector.Communication.JiraWebService.RemoteUser)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.addUserToGroupAsync(System.String,JIRAConnector.Communication.JiraWebService.RemoteGroup,JIRAConnector.Communication.JiraWebService.RemoteUser)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.addUserToGroupAsync(System.String,JIRAConnector.Communication.JiraWebService.RemoteGroup,JIRAConnector.Communication.JiraWebService.RemoteUser,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.removeUserFromGroup(System.String,JIRAConnector.Communication.JiraWebService.RemoteGroup,JIRAConnector.Communication.JiraWebService.RemoteUser)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.removeUserFromGroupAsync(System.String,JIRAConnector.Communication.JiraWebService.RemoteGroup,JIRAConnector.Communication.JiraWebService.RemoteUser)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.removeUserFromGroupAsync(System.String,JIRAConnector.Communication.JiraWebService.RemoteGroup,JIRAConnector.Communication.JiraWebService.RemoteUser,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.logout(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.logoutAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.logoutAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.deleteProject(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.deleteProjectAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.deleteProjectAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.deleteIssue(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.deleteIssueAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.deleteIssueAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getNotificationSchemes(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getNotificationSchemesAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getNotificationSchemesAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getPermissionSchemes(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getPermissionSchemesAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getPermissionSchemesAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.createPermissionScheme(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.createPermissionSchemeAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.createPermissionSchemeAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.deletePermissionScheme(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.deletePermissionSchemeAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.deletePermissionSchemeAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.addPermissionTo(System.String,JIRAConnector.Communication.JiraWebService.RemotePermissionScheme,JIRAConnector.Communication.JiraWebService.RemotePermission,JIRAConnector.Communication.JiraWebService.RemoteEntity)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.addPermissionToAsync(System.String,JIRAConnector.Communication.JiraWebService.RemotePermissionScheme,JIRAConnector.Communication.JiraWebService.RemotePermission,JIRAConnector.Communication.JiraWebService.RemoteEntity)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.addPermissionToAsync(System.String,JIRAConnector.Communication.JiraWebService.RemotePermissionScheme,JIRAConnector.Communication.JiraWebService.RemotePermission,JIRAConnector.Communication.JiraWebService.RemoteEntity,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.deletePermissionFrom(System.String,JIRAConnector.Communication.JiraWebService.RemotePermissionScheme,JIRAConnector.Communication.JiraWebService.RemotePermission,JIRAConnector.Communication.JiraWebService.RemoteEntity)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.deletePermissionFromAsync(System.String,JIRAConnector.Communication.JiraWebService.RemotePermissionScheme,JIRAConnector.Communication.JiraWebService.RemotePermission,JIRAConnector.Communication.JiraWebService.RemoteEntity)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.deletePermissionFromAsync(System.String,JIRAConnector.Communication.JiraWebService.RemotePermissionScheme,JIRAConnector.Communication.JiraWebService.RemotePermission,JIRAConnector.Communication.JiraWebService.RemoteEntity,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getAllPermissions(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getAllPermissionsAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getAllPermissionsAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getFieldsForAction(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getFieldsForActionAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getFieldsForActionAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.progressWorkflowAction(System.String,System.String,System.String,JIRAConnector.Communication.JiraWebService.RemoteFieldValue[])">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.progressWorkflowActionAsync(System.String,System.String,System.String,JIRAConnector.Communication.JiraWebService.RemoteFieldValue[])">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.progressWorkflowActionAsync(System.String,System.String,System.String,JIRAConnector.Communication.JiraWebService.RemoteFieldValue[],System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.addAttachmentToIssue(System.String,System.String[],JIRAConnector.Communication.JiraWebService.RemoteIssue)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.addAttachmentToIssueAsync(System.String,System.String[],JIRAConnector.Communication.JiraWebService.RemoteIssue)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.addAttachmentToIssueAsync(System.String,System.String[],JIRAConnector.Communication.JiraWebService.RemoteIssue,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getIssuesFromTextSearch(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getIssuesFromTextSearchAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getIssuesFromTextSearchAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getIssuesFromTextSearchWithProject(System.String,System.String[],System.String,System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getIssuesFromTextSearchWithProjectAsync(System.String,System.String[],System.String,System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getIssuesFromTextSearchWithProjectAsync(System.String,System.String[],System.String,System.Int32,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.deleteUser(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.deleteUserAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.deleteUserAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.updateGroup(System.String,JIRAConnector.Communication.JiraWebService.RemoteGroup)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.updateGroupAsync(System.String,JIRAConnector.Communication.JiraWebService.RemoteGroup)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.updateGroupAsync(System.String,JIRAConnector.Communication.JiraWebService.RemoteGroup,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.deleteGroup(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.deleteGroupAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.deleteGroupAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.refreshCustomFields(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.refreshCustomFieldsAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.refreshCustomFieldsAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getProjectsNoSchemes(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getProjectsNoSchemesAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getProjectsNoSchemesAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.addVersion(System.String,System.String,JIRAConnector.Communication.JiraWebService.RemoteVersion)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.addVersionAsync(System.String,System.String,JIRAConnector.Communication.JiraWebService.RemoteVersion)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.addVersionAsync(System.String,System.String,JIRAConnector.Communication.JiraWebService.RemoteVersion,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.createProjectFromObject(System.String,JIRAConnector.Communication.JiraWebService.RemoteProject)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.createProjectFromObjectAsync(System.String,JIRAConnector.Communication.JiraWebService.RemoteProject)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.createProjectFromObjectAsync(System.String,JIRAConnector.Communication.JiraWebService.RemoteProject,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getSecuritySchemes(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getSecuritySchemesAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getSecuritySchemesAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getIssuesFromFilter(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getIssuesFromFilterAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getIssuesFromFilterAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getServerInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getGroupCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.createGroupCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.createUserCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getUserCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.loginCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getIssueCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.createIssueCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getAvailableActionsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getComponentsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getProjectsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.updateIssueCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.updateProjectCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getIssueTypesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getPrioritiesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getResolutionsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getStatusesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getSubTaskIssueTypesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getCustomFieldsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getSavedFiltersCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getCommentsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.addCommentCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getVersionsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.createProjectCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getFieldsForEditCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.addUserToGroupCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.removeUserFromGroupCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.logoutCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.deleteProjectCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.deleteIssueCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getNotificationSchemesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getPermissionSchemesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.createPermissionSchemeCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.deletePermissionSchemeCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.addPermissionToCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.deletePermissionFromCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getAllPermissionsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getFieldsForActionCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.progressWorkflowActionCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.addAttachmentToIssueCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getIssuesFromTextSearchCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getIssuesFromTextSearchWithProjectCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.deleteUserCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.updateGroupCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.deleteGroupCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.refreshCustomFieldsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getProjectsNoSchemesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.addVersionCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.createProjectFromObjectCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getSecuritySchemesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:JIRAConnector.Communication.JiraWebService.JiraSoapServiceService.getIssuesFromFilterCompleted">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.RemoteServerInfo">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteServerInfo.baseUrl">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteServerInfo.buildDate">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteServerInfo.buildNumber">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteServerInfo.edition">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteServerInfo.version">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.RemoteComment">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteComment.body">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteComment.id">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteComment.level">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteComment.timePerformed">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteComment.username">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.RemoteFieldValue">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteFieldValue.id">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteFieldValue.values">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.RemoteCustomFieldValue">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteCustomFieldValue.customfieldId">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteCustomFieldValue.key">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteCustomFieldValue.values">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.RemotePermission">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemotePermission.name">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemotePermission.permission">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.RemotePermissionMapping">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemotePermissionMapping.permission">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemotePermissionMapping.remoteEntities">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.RemoteEntity">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.RemoteGroup">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteGroup.name">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteGroup.users">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.RemoteUser">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteUser.email">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteUser.fullname">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteUser.name">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.RemoteScheme">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteScheme.description">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteScheme.id">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteScheme.name">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteScheme.type">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.RemotePermissionScheme">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemotePermissionScheme.permissionMappings">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.AbstractRemoteEntity">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.AbstractRemoteEntity.id">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.RemoteIssue">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteIssue.affectsVersions">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteIssue.assignee">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteIssue.attachmentNames">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteIssue.components">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteIssue.created">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteIssue.customFieldValues">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteIssue.description">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteIssue.duedate">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteIssue.environment">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteIssue.fixVersions">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteIssue.key">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteIssue.priority">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteIssue.project">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteIssue.reporter">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteIssue.resolution">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteIssue.status">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteIssue.summary">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteIssue.type">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteIssue.updated">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteIssue.votes">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.RemoteVersion">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.AbstractNamedRemoteEntity">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.AbstractNamedRemoteEntity.name">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteVersion.archived">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteVersion.releaseDate">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteVersion.released">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteVersion.sequence">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.RemoteFilter">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteFilter.author">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteFilter.description">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteFilter.project">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteFilter.xml">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.RemoteField">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.AbstractRemoteConstant">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.AbstractRemoteConstant.description">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.AbstractRemoteConstant.icon">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.RemoteStatus">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.RemoteResolution">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.RemotePriority">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemotePriority.color">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.RemoteIssueType">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.RemoteProject">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteProject.description">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteProject.issueSecurityScheme">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteProject.key">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteProject.lead">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteProject.notificationScheme">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteProject.permissionScheme">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteProject.projectUrl">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.RemoteProject.url">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.RemoteNamedObject">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.RemoteComponent">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getServerInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getServerInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.getServerInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getGroupCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getGroupCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.getGroupCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.createGroupCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.createGroupCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.createGroupCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.createUserCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.createUserCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.createUserCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getUserCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getUserCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.getUserCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.loginCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.loginCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.loginCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getIssueCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getIssueCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.getIssueCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.createIssueCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.createIssueCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.createIssueCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getAvailableActionsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getAvailableActionsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.getAvailableActionsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getComponentsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getComponentsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.getComponentsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getProjectsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getProjectsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.getProjectsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.updateIssueCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.updateIssueCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.updateIssueCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.updateProjectCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.updateProjectCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.updateProjectCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getIssueTypesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getIssueTypesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.getIssueTypesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getPrioritiesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getPrioritiesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.getPrioritiesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getResolutionsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getResolutionsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.getResolutionsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getStatusesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getStatusesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.getStatusesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getSubTaskIssueTypesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getSubTaskIssueTypesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.getSubTaskIssueTypesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getCustomFieldsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getCustomFieldsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.getCustomFieldsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getSavedFiltersCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getSavedFiltersCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.getSavedFiltersCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getCommentsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getCommentsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.getCommentsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.addCommentCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getVersionsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getVersionsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.getVersionsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.createProjectCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.createProjectCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.createProjectCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getFieldsForEditCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getFieldsForEditCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.getFieldsForEditCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.addUserToGroupCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.removeUserFromGroupCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.logoutCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.logoutCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.logoutCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.deleteProjectCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.deleteIssueCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getNotificationSchemesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getNotificationSchemesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.getNotificationSchemesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getPermissionSchemesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getPermissionSchemesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.getPermissionSchemesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.createPermissionSchemeCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.createPermissionSchemeCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.createPermissionSchemeCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.deletePermissionSchemeCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.addPermissionToCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.addPermissionToCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.addPermissionToCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.deletePermissionFromCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.deletePermissionFromCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.deletePermissionFromCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getAllPermissionsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getAllPermissionsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.getAllPermissionsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getFieldsForActionCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getFieldsForActionCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.getFieldsForActionCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.progressWorkflowActionCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.progressWorkflowActionCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.progressWorkflowActionCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.addAttachmentToIssueCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.addAttachmentToIssueCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.addAttachmentToIssueCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getIssuesFromTextSearchCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getIssuesFromTextSearchCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.getIssuesFromTextSearchCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getIssuesFromTextSearchWithProjectCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getIssuesFromTextSearchWithProjectCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.getIssuesFromTextSearchWithProjectCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.deleteUserCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.updateGroupCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.updateGroupCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.updateGroupCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.deleteGroupCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.refreshCustomFieldsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getProjectsNoSchemesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getProjectsNoSchemesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.getProjectsNoSchemesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.addVersionCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.addVersionCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.addVersionCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.createProjectFromObjectCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.createProjectFromObjectCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.createProjectFromObjectCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getSecuritySchemesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getSecuritySchemesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.getSecuritySchemesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getIssuesFromFilterCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraWebService.getIssuesFromFilterCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraWebService.getIssuesFromFilterCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="M:JIRAConnector.Communication.IJiraProvider.AuthenticateUser(System.String,System.String)">
+            <summary>
+            Authenticates a user in a JIRA Implementation
+            </summary>
+            <param name="userName">The JIRA UserName</param>
+            <param name="password">The password for that UserName in clear text</param>
+            <returns>A boolean indicating where the login attempt was successful or not</returns>
+        </member>
+        <member name="M:JIRAConnector.Communication.IJiraProvider.GetAllIssuesFromProjectAssignedToCurrentUser(System.String)">
+            <summary>
+            Gets all the issues of the selected project assigned to the current user of JiraConnector
+            </summary>
+            <param name="projectKey">The project key as stated in the Jira Project Configuration</param>
+            <returns>A generic list of <c>Issue</c> entities </returns>
+        </member>
+        <member name="M:JIRAConnector.Communication.IJiraProvider.GetIssueComments(System.String)">
+            <summary>
+            Get all te comments associated with a specified issue
+            </summary>
+            <param name="issueKey">The Key of the Issue whose comments are to be retrieved </param>
+            <returns>A generic list of <c>IssueComment</c> entities</returns>
+        </member>
+        <member name="M:JIRAConnector.Communication.IJiraProvider.AddCommentToIssue(System.String,JIRAConnector.Common.IssueComment)">
+            <summary>
+            Adds a comment to an Issue
+            </summary>
+            <param name="comment">The <c>RemoteComment</c> to add to the issue</param>
+            <param name="issueKey">The key of the issue to which the comment will be added</param>
+        </member>
+        <member name="M:JIRAConnector.Communication.IJiraProvider.ProgressWorkflowForResolution(System.String,System.String,System.String,System.String,System.String[],System.String[])">
+            <summary>
+            Progress the workflow of and Issue in order to resolve it or close it
+            </summary>
+            <param name="actionId">The string representation of the numeric id corresponding to the workflow action to perform</param>
+            <param name="issueKey">The key of the Issue to resolve</param>
+            <param name="resolutionKey">The resolution key of the issue</param>
+            <param name="resolutionComment">An optional comment related to the action</param>
+            <param name="fixVersions">A list a list containing all the Issue fix versions' ID's</param>
+            <param name="affectsVersions">A list a list containing all the Issue affects versions' ID's</param>
+        </member>
+        <member name="M:JIRAConnector.Communication.IJiraProvider.GetAllProjectKeysForCurrenUser">
+            <summary>
+            Gets all the available project keys in a JIRA Server Instance to which the user has access
+            </summary>
+            <returns>An array of strings containing the project keys</returns>
+        </member>
+        <member name="M:JIRAConnector.Communication.IJiraProvider.AuthenticateUser(System.String,System.String,System.String,System.String)">
+            <summary>
+            Authenticates a user in a JIRA Server instance, generating an authentication token
+            that is saved for future calls between JiraConnector and the server.
+            </summary>
+            <param name="url">The URL of the JIRA Server Instance</param>
+            <param name="port">The corresponding port</param>
+            <param name="username">The username to authenticate</param>
+            <param name="password">The password corresponding to the user</param>
+        </member>
+        <member name="M:JIRAConnector.Communication.IJiraProvider.LogWorkDone(System.String,System.String,System.String)">
+            <summary>
+            This method allows the user to log work done on an issue.
+            </summary>
+            <param name="issueId">The ID of the selected issue to log work to</param>
+            <param name="workDone">A string representing the ammount of work done as entered by the user</param>
+        </member>
+        <member name="M:JIRAConnector.Communication.IJiraProvider.GetOpenIssuesFromProjectAssignedToCurrentUser(System.String)">
+            <summary>
+            Gets all the "Open" and "In Progress" issues of the selected project assigned to the current user of JiraConnector
+            </summary>
+            <param name="projectKey">The project key as stated in the Jira Project Configuration</param>
+            <returns>A generic list of <c>Issue</c> entities </returns>
+        </member>
+        <member name="M:JIRAConnector.Communication.IJiraProvider.GetAvailableActions(System.String)">
+            <summary>
+            Gets all the available workflow actions for a given issue
+            </summary>
+            <param name="issueKey">The Key of the issue whose available actions we want to know</param>
+            <returns>A List of integers, each one representing the ID of an available actions</returns>
+        </member>
+        <member name="M:JIRAConnector.Communication.IJiraProvider.GetAvailableResolutions">
+            <summary>
+            Gets all the available resolutions from the JIRA Server Instance
+            </summary>
+            <returns>A generic dictionary of strings representing the resolution names and keys</returns>
+        </member>
+        <member name="M:JIRAConnector.Communication.IJiraProvider.StartIssueProgress(System.String)">
+            <summary>
+            Changes the status of a given Issue to "In Progress"
+            </summary>
+            <param name="issueKey">The key of the issue to mark as in progress</param>
+        </member>
+        <member name="M:JIRAConnector.Communication.IJiraProvider.GetVersionsIdsFromVersionNames(System.String[])">
+            <summary>
+            Gets a list of Version ID's according to those Versions Names
+            </summary>
+            <param name="versionNames">The list containing the versions names whose IDs we want to get</param>
+            <returns>A list containing the IDs of the appropiate versions</returns>
+        </member>
+        <member name="M:JIRAConnector.Communication.IJiraProvider.StopIssueProgress(System.String)">
+            <summary>
+            Stops the work progress of an Issue
+            </summary>
+            <param name="issueKey">The key of the issue whose progress is being stopped</param>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraHttpHelper.GetJiraRpcUrlForFilter(System.String,JIRAConnector.Common.Enums.JiraIssueAsignee,JIRAConnector.Common.Enums.JiraIssueStatus)">
+            <summary>
+            This method builds a HTTP URL to perform a request to JIRA in order to get certain issues applying a filter
+            </summary>
+            <param name="projectId">The id of the project</param>
+            <param name="asignee">The asignee whose issues we are filtering</param>
+            <param name="status">The status of the issues we are filtering</param>
+            <returns>A string with a well formed URL to perform a XML-HTTP request</returns>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraHttpHelper.GetJiraRpcUrlForLoggingWorkDone(System.String,System.String,System.String)">
+            <summary>
+            Gets a formatted URL prepared specially to perform an HTTP Request
+            that logs work done to an issue
+            </summary>
+            <param name="issueId">The ID of the selected issue to log work to</param>
+            <param name="workDone">A string representing the ammount of work done as entered by the user</param>
+            <returns>The formatted URL string</returns>
+        </member>
+        <member name="T:JIRAConnector.Communication.JiraProvider">
+            <summary>
+            This class represents a gateway to a JIRA Implementation. 
+            It's methods are intended to be consumed from the JIRAConnector.Core namespace since this class 
+            is the responsible for deciding how to "talk" to JIRA. Among other things, this class decides wheter an operation
+            will be performed through JIRA's XML-HTTP interface or throug JIRA's SOAP Client.
+            </summary>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraProvider.AuthenticateUser(System.String,System.String)">
+            <summary>
+            Authenticates a user in a JIRA Implementation
+            </summary>
+            <param name="userName">The JIRA UserName</param>
+            <param name="password">The password for that UserName in clear text</param>
+            <returns>A boolean indicating where the login attempt was successful or not</returns>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraProvider.GetProjectIdFromProjectKey(System.String)">
+            <summary>
+            Uses JIRA SOAP Service in order to obtain a Project ID from a Project Key 
+            </summary>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraProvider.GetAllIssuesFromProjectAssignedToCurrentUser(System.String)">
+            <summary>
+            Gets all the issues of the selected project assigned to the current user of JiraConnector
+            </summary>
+            <param name="projectKey">The project key as stated in the Jira Project Configuration</param>
+            <returns>A generic list of <c>Issue</c> entities </returns>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraProvider.GetIssueComments(System.String)">
+            <summary>
+            Get all te comments associated with a specified issue
+            </summary>
+            <param name="issueKey">The Key of the Issue whose comments are to be retrieved </param>
+            <returns>A generic list of <c>IssueComment</c> entities</returns>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraProvider.AddCommentToIssue(System.String,JIRAConnector.Common.IssueComment)">
+            <summary>
+            Adds a comment to an Issue
+            </summary>
+            <param name="comment">The <c>RemoteComment</c> to add to the issue</param>
+            <param name="issueKey">The key of the issue to which the comment will be added</param>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraProvider.ProgressWorkflowForResolution(System.String,System.String,System.String,System.String,System.String[],System.String[])">
+            <summary>
+            Progress the workflow of and Issue in order to resolve it or close it
+            </summary>
+            <param name="actionId">The string representation of the numeric id corresponding to the workflow action to perform</param>
+            <param name="issueKey">The key of the Issue to resolve</param>
+            <param name="resolutionKey">The resolution key of the issue</param>
+            <param name="resolutionComment">An optional comment related to the action</param>
+            <param name="fixVersions">A list a list containing all the Issue fix versions' ID's</param>
+            <param name="affectsVersions">A list a list containing all the Issue affects versions' ID's</param>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraProvider.GetAllProjectKeysForCurrenUser">
+            <summary>
+            Gets all the available project keys in a JIRA Server Instance to which the user has access
+            </summary>
+            <returns>An array of strings containing the project keys</returns>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraProvider.AuthenticateUser(System.String,System.String,System.String,System.String)">
+            <summary>
+            Authenticates a user in a JIRA Server instance, generating an authentication token
+            that is saved for future calls between JiraConnector and the server.
+            </summary>
+            <param name="url">The URL of the JIRA Server Instance</param>
+            <param name="port">The corresponding port</param>
+            <param name="username">The username to authenticate</param>
+            <param name="password">The password corresponding to the user</param>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraProvider.LogWorkDone(System.String,System.String,System.String)">
+            <summary>
+            This method allows the user to log work done on an issue.
+            </summary>
+            <param name="issueId">The ID of the selected issue to log work to</param>
+            <param name="workDone">A string representing the ammount of work done as entered by the user</param>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraProvider.GetOpenIssuesFromProjectAssignedToCurrentUser(System.String)">
+            <summary>
+            Gets all the "Open" and "In Progress" issues of the selected project assigned to the current user of JiraConnector
+            </summary>
+            <param name="projectKey">The project key as stated in the Jira Project Configuration</param>
+            <returns>A generic list of <c>Issue</c> entities </returns>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraProvider.GetAvailableActions(System.String)">
+            <summary>
+            Gets all the available workflow actions for a given issue
+            </summary>
+            <param name="issueKey">The Key of the issue whose available actions we want to know</param>
+            <returns>A List of integers, each one representing the ID of an available actions</returns>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraProvider.GetAvailableResolutions">
+            <summary>
+            Gets all the available resolutions from the JIRA Server Instance
+            </summary>
+            <returns>A generic dictionary of strings representing the resolution names and keys</returns>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraProvider.StartIssueProgress(System.String)">
+            <summary>
+            Changes the status of a given Issue to "In Progress"
+            </summary>
+            <param name="issueKey">The key of the issue to mark as in progress</param>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraProvider.GetVersionsIdsFromVersionNames(System.String[])">
+            <summary>
+            Gets a list of Version ID's according to those Versions Names
+            </summary>
+            <param name="versionNames">The list containing the versions names whose IDs we want to get</param>
+            <returns>A list containing the IDs of the appropiate versions</returns>
+        </member>
+        <member name="M:JIRAConnector.Communication.JiraProvider.StopIssueProgress(System.String)">
+            <summary>
+            Stops the work progress of an Issue
+            </summary>
+            <param name="issueKey">The key of the issue whose progress is being stopped</param>
+        </member>
+        <member name="P:JIRAConnector.Communication.JiraProvider.AuthenticationToken">
+            <summary>
+            Gets the authentication token returned by a Jira Server after a successful login has taken place.
+            This token is necessary for performing future calls to JIRA using it's SOAP Client interface.
+            If the authentication token is empty (i.e. the first call), a login is attempted using JiraConnector configuration data.
+            </summary>
+        </member>
+    </members>
+</doc>
